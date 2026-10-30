@@ -1,0 +1,11 @@
+apiVersion: 1
+
+contactPoints:
+  - orgId: 1
+    name: Slack monitoring alerts
+    receivers:
+      - uid: ag2mnqblucw74c
+        type: slack
+        settings:
+          url: $SLACK_WEBHOOK_URL
+        disableResolveMessage: false
